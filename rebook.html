@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebook Appointment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/rebook.css') }}">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/rebook.css">
+</head>
+<body>
+    <div class="rebook-container">
+        <h1>Appointment Rejected</h1>
+        <p>Unfortunately, your appointment has been rejected. Please choose another time slot.</p>
+
+        <form id="rebook-form" method="POST" action="/rebook_appointment">
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="Dr. Ahmed">Dr. Ahmed</option>
+                <option value="Dr. Sarah">Dr. Sarah</option>
+                <option value="Dr. Mohmmed">Dr. Mohmmed</option>
+                <option value="Dr. Maha">Dr. Maha</option>
+            </select>
+
+            <label for="day">Select Day:</label>
+            <input type="date" id="day" name="day" required>
+
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Rebook Appointment</button>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/rebook.js') }}"></script>
+    <script src="js/rebook.js"></script>
+</body>
+</html>

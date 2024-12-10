@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/appointments.css">
+</head>
+<body>
+    <div class="appointments-container">
+        <h1>Available Appointments</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Available Time Slots</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Saturday</td>
+                    <td>9:00 AM - 3:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>9:00 AM - 3:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>9:00 AM - 3:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>9:00 AM - 3:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>9:00 AM - 3:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>9:00 AM - 3:00 PM</td>
+                </tr>
+            </tbody>
+        </table>
+        <form id="appointment-form">
+            <h2>Book an Appointment</h2>
+            <label for="day">Select Day:</label>
+            <select id="day" required>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+            </select>
+            <label for="time">Select Time:</label>
+            <select id="time" required>
+                <option value="9:00 AM">9:00 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+            </select>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+    <script src="js/appointments.js"></script>
+</body>
+</html>

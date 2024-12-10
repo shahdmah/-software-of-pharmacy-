@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Appointments</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/doctor.css">
+</head>
+<body>
+    <div class="doctor-container">
+        <h1>Doctor's Appointments</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Appointment Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="pending-appointments">
+            </tbody>
+        </table>
+
+        <h2>Confirmed Appointments</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Appointment Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="confirmed-appointments">
+            </tbody>
+        </table>
+
+        <button class="logout" onclick="logout()">Logout</button>
+    </div>
+    
+    <script src="js/doctor.js"></script>
+</body>
+</html>
